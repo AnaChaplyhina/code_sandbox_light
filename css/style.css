@@ -830,3 +830,24 @@ button:focus,
         --accent-blue: #0066cc;
     }
 }
+
+/* Налаштування для портрета */
+.hero-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    /* Щоб фото не розтягувалось */
+    border-radius: 50px;
+    /* Заокруглені кути. Якщо хочеш ідеальне коло - напиши 50% */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+/* Для великих екранів (ноутбуків) фото буде збоку від тексту */
+@media (min-width: 768px) {
+    .hero-image {
+        margin-bottom: 0;
+        width: 300px;
+        height: 300px;
+    }
+}
